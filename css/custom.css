@@ -39,15 +39,22 @@ section{
     display: flex;
     align-items: center;
     justify-content: center;
+    opacity: 0.95;
 }
+
+#fdl:hover{
+    cursor: pointer;
+    opacity: 1;
+}
+
 #works-tittle{
     background-color: #FED45F;
     align-items: center;
     text-align: center;
+    opacity: 1;
 }
 
 .image-responsive {
-    width: 100%;
-    max-width: 100%;
+    max-width: 20vw;
     height: auto;
   }
