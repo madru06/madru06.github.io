@@ -5,6 +5,18 @@ section{
     height: 100vh;
     display: flex;
 }
+a{
+    color: #FED45F;
+}
+footer{
+    color: #DBA9CE;
+    height: 10vh;
+    border-top: rgb(148, 143, 146) dotted 2px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    cursor: default;
+}
 #home-main-container{
     border: #FED45F 20px solid;
     height: 50vh;
@@ -22,6 +34,14 @@ section{
     font-style: italic;
 }
 
+#mid-banner{
+    color: #DBA9CE;
+    height: 35vh;
+    border-top: #DBA9CE dotted 2px;
+    align-items: center;
+    justify-content: center;
+}
+
 #works-container{
     background-color: #DBA9CE;
     color:whitesmoke;
@@ -29,29 +49,33 @@ section{
     justify-content: space-around;
     flex-flow: row wrap;
     align-items: center;
-
 }
 
 .w-card{
-    background-color: #B79DCA;
+    background-color:black;
     width: 20vw;
     height: 40vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    opacity: 0.95;
+    opacity: 0.90;
+    text-align: center
 }
 
-#fdl:hover{
+.w-card:hover{
     cursor: pointer;
     opacity: 1;
 }
-
-#works-tittle{
+.card>div{
+    display: inline-block;
+}
+.tag{
     background-color: #FED45F;
+    color: black;
     align-items: center;
     text-align: center;
     opacity: 1;
+    cursor: default;
 }
 
 .image-responsive {
