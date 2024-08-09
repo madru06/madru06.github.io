@@ -1,0 +1,149 @@
+@import 'variables';
+
+body {
+    background-color: $raven;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+section{
+    height: 100vh;
+    display: flex;
+    gap: 10px 20px;
+}
+a{
+    color: $gold;
+}
+footer{
+    color: $tulip;
+    height: 10vh;
+    border-top: $tulip dotted 2px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    cursor: default;
+}
+#home-main-container{
+    border: $gold 20px solid;
+    height: 50vh;
+    width: 90%;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 25vh;
+    margin-bottom: 25vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#home-main-container > h1{
+    color: $gold;
+    font-style: italic;
+}
+
+#home-main-container > p{
+    color: $gold_faded;
+    font-style: normal;
+}
+
+#mid-banner{
+    color: $tulip;
+    height: 25vh;
+    border-top:$tulip dotted 2px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#works-container{
+    background-color:$tulip;
+    color:whitesmoke;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+    align-items: center;
+    height: auto;
+    padding: 1.3rem;
+}
+
+.w-card{
+    background-color: $raven;
+    border-radius: 0.5rem;
+    width: 20vw;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.90;
+    text-align: center
+}
+
+.w-card:hover{
+    cursor: pointer;
+    opacity: 1;
+}
+.card>div{
+    display: inline-block;
+}
+
+.tag{
+    background-color: $gold;
+    color: $raven;
+    align-items: center;
+    text-align: center;
+    opacity: 1;
+    cursor: default !important;
+}
+
+.image-responsive {
+    max-width: 20vw;
+    height: auto;
+  }
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+    width: 20px;
+}
+ 
+::-webkit-scrollbar-track {
+    background-color: $raven;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: $chalkboard;
+    cursor: grab; 
+}
+
+/*MOBILE FIRST*/
+@media only screen and (max-width: 991px) {
+    .w-card{
+        flex-basis: 75%;
+        height: 160px;
+    }
+    .tag{
+        //flex-grow: 4;
+    }
+    #works-container{
+        flex-flow: column;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .w-card{
+        //flex-basis: 75%;
+        height: 160px;
+    }
+    .tag{
+        //flex-grow: 4;
+    }
+    #works-container{
+        flex-flow: column;
+    }
+}
+/*FONTS*/
+.font_serified{
+    font-family: $serif_main;
+}
