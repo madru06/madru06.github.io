@@ -106,37 +106,31 @@ footer {
 
 /* Scrollbar Styling */
 ::-webkit-scrollbar {
-  width: 20px;
+  width: 15px;
 }
 
 ::-webkit-scrollbar-track {
-  background-color: #15181E;
-  border-radius: 10px;
+  background-color: rgba(254, 212, 95, 0.5803921569);
   margin: 5px;
 }
 
 ::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  background: rgba(254, 212, 95, 0.1843137255);
+  background: #FED45F;
   cursor: grab;
 }
 
 /*MOBILE FIRST*/
 @media only screen and (max-width: 991px) {
   .w-card {
-    flex-basis: 75%;
-    height: 160px;
+    flex-basis: 20%;
+    width: 100%;
+  }
+  .tag {
+    width: 100%;
   }
   #works-container {
-    flex-flow: column;
-  }
-}
-@media only screen and (max-width: 768px) {
-  .w-card {
-    height: 160px;
-  }
-  #works-container {
-    flex-flow: column;
+    flex-flow: column wrap;
   }
 }
 /*FONTS*/

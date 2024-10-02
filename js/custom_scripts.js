@@ -1,19 +1,16 @@
 
-function redirect1(){
-    window.open('https://madru06.github.io/madru06.flordeloto/', '_blank');
+let outside_urls = [
+    ["flordeloto","https://madru06.github.io/madru06.flordeloto/"],
+    ["streetburguers", "https://madru06.github.io/madru06.streetsburguers/"],
+    ["ontv", "https://madru06.github.io/madru06.OnTV/"],
+    ["demongapi", "https://github.com/madru06/demo-ng-api"],
+    ["vuedemos", "https://github.com/madru06/Vue-Demos"],
+    ["meseroapp", "https://github.com/madru06/mesero-app"],
+    ["myconverter", "https://madru06.github.io/madru06.MyConverter/"]
+ ]
+
+function redirecToSite(name) {
+    let result_url = outside_urls.filter(x => x[0] === name)
+    window.open(result_url[0][1], '_blank');
 }
-function redirect2(){
-    window.open('https://madru06.github.io/madru06.streetsburguers/', '_blank');
-}
-function redirect3(){
-    window.open('https://madru06.github.io/madru06.OnTV/', '_blank');
-}
-function redirect4(){
-    window.open('https://github.com/madru06/demo-ng-api', '_blank');
-}
-function redirect5(){
-    window.open('https://github.com/madru06/Vue-Demos', '_blank');
-}
-function redirect6(){
-    window.open('https://github.com/madru06/mesero-app', '_blank');
-}
+
