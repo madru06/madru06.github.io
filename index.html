@@ -1,56 +1,83 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="icon" type="image/x-icon" href="/images/logos/circled_original.png">
+    <script src="https://kit.fontawesome.com/980cd75476.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="images/logos/circled_original.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>My portfolio</title>
 </head>
-<body>
+<body class="bg-indigo-950">
 
-<section id="home-main-container" class="font_serified">
-    <h1> Hey there!</h1>
-    <p> I'm Madelyn, an enthusiastic for web design & development.</p>
+<section id="overview" class="h-95 md:h-screen flex flex-col justify-center align-center text-center text-yellow-500 py-2 m-5 border-dashed border-2 border-yellow-500">
+    <h1 class="font-bold text-9xl py-2 md:py-5"> Hey there!</h1>
+    <p class="font-thin italic text-3xl py-2 md:py-5"> I'm Madelyn Ruiz, Web Designer, Developer & Data Science enthusiastic.</p>
+    <div>
+        <ul class="inline-flex justify-items-center gap-4 text-2xl my-5">
+            <li>
+                <a href="https://github.com/madru06" target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/madelyn-ruiz-3086a71ab/" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.behance.net/madruiz" target="_blank">
+                    <i class="fa-brands fa-behance"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+    
 </section>
 
-<section id="mid-banner" class="font_serified">
-    <h5>You can take a look at some of my demo works </h5>
+<section id="mid-banner" class="m-5 text-yellow-500">
+    <span class="border-2 border-yellow-500 mx-5"></span>
+    <span class="font-thin text-3xl italic">You can take a look at some of my demos, works and projects </h5>
 </section>
 
-<section id="works-container">
-        <div class="tag w-card">
-            <h2>Static Demos</h2>
+<section class="flex-col border-2 border-yellow-500 border-dashed mx-5 p-5 rounded" id="static_demos">
+        <div class="bg-gradient-to-r from-yellow-500 to-orange-100 p-5 rounded grow m-2">
+            <h2 class="text-5xl">Static Demos</h2>
         </div>
-        <div class="w-card" id="fdl" onclick="redirecToSite('flordeloto')">
-            <h3>Flor de Loto</h3>
+        <div class="bg-gradient-to-r from-blue-950 to-indigo-900 hover:from-indigo-950 hover:to-blue-900 text-sky-500 p-5 m-2 rounded" onclick="redirecToSite('myconverter')">
+            <h3 class="text-4xl font-thin">My Converter</h3>
         </div>
-       <div class="w-card" onclick="redirecToSite('ontv')">
-           <h3>OnTV</h3>
+        <div class="bg-gradient-to-r from-blue-950 to-indigo-900 hover:from-indigo-950 hover:to-blue-900 text-sky-500 p-5 m-2 rounded" onclick="redirecToSite('flordeloto')">
+            <h3 class="text-4xl font-thin">Flor de Loto</h3>
+        </div>
+       <div class="bg-gradient-to-r from-blue-950 to-indigo-900 hover:from-indigo-950 hover:to-blue-900 text-sky-500 p-5 m-2 rounded" onclick="redirecToSite('ontv')">
+           <h3 class="text-4xl font-thin">OnTV</h3>
        </div>
-       <div class="w-card" onclick="redirecToSite('streetburguers')">
-           <h3>Street's Burgers</h3>
+       <div class="bg-gradient-to-r from-blue-950 to-indigo-900 hover:from-indigo-950 hover:to-blue-900 text-sky-500 p-5 m-2 rounded" onclick="redirecToSite('streetburguers')">
+           <h3 class="text-4xl font-thin">Street's Burgers</h3>
         </div>
-        <div class="tag w-card">
+</section>
+<section class="works-container" hidden>
+        <div class="">
             <h2>Code Repos</h3>
         </div>
-        <div class="w-card" onclick="redirecToSite('demongapi')">
+        <div class="" onclick="redirecToSite('demongapi')">
             <h3>API with Angular</h3>
         </div>
-       <div class="w-card" onclick="redirecToSite('vuedemos')">
+       <div class="" onclick="redirecToSite('vuedemos')">
            <h3>Misc Vue</h3>
        </div>
-       <div class="w-card" onclick="redirecToSite('meseroapp')">
+       <div class="" onclick="redirecToSite('meseroapp')">
            <h3>Angular App + Firebase</h3>
        </div>
        
 </section>
-<footer>
+<footer class="text-sky-500 m-5">
     <blockquote>
-        Feel free to contact me at my <a href="mailto:madelynruiz06@gmail.com">email address</a>
+        Feel free to contact me at my <a href="mailto:madelynruiz06@gmail.com" class="hover:underline font-bold">email address</a>
     </blockquote>
 </footer>
 
