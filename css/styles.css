@@ -1,6 +1,6 @@
 /* COLORS */
 /* FONTS */
 /* TAILWIND CUSTOM COMPONENTS*/
-.demos > div:not(:first-child) {
+#static_demos > div:not(:first-child) {
   cursor: pointer;
 }/*# sourceMappingURL=styles.css.map */
