@@ -6,7 +6,8 @@ let outside_urls = [
     ["demongapi", "https://github.com/madru06/demo-ng-api"],
     ["vuedemos", "https://github.com/madru06/Vue-Demos"],
     ["meseroapp", "https://github.com/madru06/mesero-app"],
-    ["myconverter", "https://madru06.github.io/madru06.MyConverter/"]
+    ["myconverter", "https://madru06.github.io/madru06.MyConverter/"],
+    ["mypokeapp", "https://madru06.github.io/MyPokeApp/"]
  ]
 
 function redirecToSite(name) {
