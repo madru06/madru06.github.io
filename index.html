@@ -15,7 +15,7 @@
 
 <section id="overview" class="h-95 md:h-screen flex flex-col justify-center align-center text-center text-yellow-500 py-2 m-5 border-dashed border-2 border-yellow-500">
     <h1 class="font-bold text-9xl py-2 md:py-5"> Hey there!</h1>
-    <p class="font-thin italic text-3xl py-2 md:py-5"> I'm Madelyn Ruiz, Web Designer, Developer & Data Science enthusiastic.</p>
+    <p class="font-thin text-3xl py-2 md:py-5"> I'm Madelyn Ruiz. Web Designer, Developer & Data Science enthusiastic.</p>
     <div>
         <ul class="inline-flex justify-items-center gap-4 text-2xl my-5">
             <li>
@@ -39,48 +39,90 @@
 </section>
 
 <section id="mid-banner" class="m-5 text-yellow-500">
-    <span class="font-thin text-3xl italic">You can take a look at some of my demos, works and projects </span>
+    <span class="font-thin text-3xl italic">Go ahead and take a look at some of my live demos and personal mini projects </span>
 </section>
 
 <section class="flex-col border-2 border-yellow-500 border-dashed mx-5 p-5 rounded demos">
         <div class="bg-gradient-to-r from-yellow-500 to-orange-100 p-5 rounded grow m-2">
             <h2 class="text-5xl">Static Demos</h2>
         </div>
-        <div class="bg-gradient-to-r from-blue-950 to-indigo-900 hover:from-indigo-950 hover:to-blue-900 text-sky-500 p-5 m-2 rounded" onclick="redirecToSite('mypokeapp')">
-            <h3 class="text-4xl font-thin">My Poke App</h3>
+        <div class="flex bg-gradient-to-r from-blue-950 to-indigo-900 hover:from-indigo-950 hover:to-blue-900 text-sky-300 p-5 m-2 rounded" onclick="redirecToSite('mypokeapp')">
+            <div class="block">
+                <h3 class="text-4xl font-thin p-1 mb-3">My Poke App</h3>
+                <span class="bg-indigo-900 rounded-full px-2 py-1 text-blue-400">Poke API</span>
+                <span class="bg-indigo-900 rounded-full px-2 py-1 text-blue-400">Materialize</span>
+                <span class="bg-indigo-900 rounded-full px-2 py-1 text-blue-400">Axios</span>
+                <span class="bg-indigo-900 rounded-full px-2 py-1 text-blue-400">Vanilla JS</span>
+                <span class="bg-indigo-900 rounded-full px-2 py-1 text-blue-400">FontAwesome</span>
+                <span class="bg-indigo-900 rounded-full px-2 py-1 text-blue-400">Google Material Icons</span>
+            </div>
         </div>
-        <div class="bg-gradient-to-r from-blue-950 to-indigo-900 hover:from-indigo-950 hover:to-blue-900 text-sky-500 p-5 m-2 rounded" onclick="redirecToSite('myconverter')">
-            <h3 class="text-4xl font-thin">My Converter</h3>
+        <div hidden class="bg-gradient-to-r from-blue-950 to-indigo-900 hover:from-indigo-950 hover:to-blue-900 text-sky-300 p-5 m-2 rounded" onclick="redirecToSite('#')">
+            <div class="block">
+                <h3 class="text-4xl font-thin p-1 mb-3">Global Time</h3>
+                <span class="bg-indigo-900 rounded-full px-2 py-1 text-blue-400">Tailwind</span>
+                <span class="bg-indigo-900 rounded-full px-2 py-1 text-blue-400">Vanilla JS</span>
+                <span class="bg-indigo-900 rounded-full px-2 py-1 text-blue-400">FontAwesome</span>
+                <span class="bg-indigo-900 rounded-full px-2 py-1 text-blue-400">Axios</span>
+                <span class="bg-indigo-900 rounded-full px-2 py-1 text-blue-400">RestCountries API</span>
+                <span class="bg-indigo-900 rounded-full px-2 py-1 text-blue-400">GeoPlugin API</span>
+            </div>
         </div>
-        <div class="bg-gradient-to-r from-blue-950 to-indigo-900 hover:from-indigo-950 hover:to-blue-900 text-sky-500 p-5 m-2 rounded" onclick="redirecToSite('flordeloto')">
-            <h3 class="text-4xl font-thin">Flor de Loto</h3>
+        <div class="bg-gradient-to-r from-blue-950 to-indigo-900 hover:from-indigo-950 hover:to-blue-900 text-sky-300 p-5 m-2 rounded" onclick="redirecToSite('myconverter')">
+            <div class="block">
+                <h3 class="text-4xl font-thin p-1 mb-3">My Converter</h3>
+                <span class="bg-indigo-900 rounded-full px-2 py-1 text-blue-400">Materialize</span>
+                <span class="bg-indigo-900 rounded-full px-2 py-1 text-blue-400">Vanilla JS</span>
+                <span class="bg-indigo-900 rounded-full px-2 py-1 text-blue-400">FontAwesome</span>
+                <span class="bg-indigo-900 rounded-full px-2 py-1 text-blue-400">Custom Translations</span>
+            </div>
         </div>
-       <div class="bg-gradient-to-r from-blue-950 to-indigo-900 hover:from-indigo-950 hover:to-blue-900 text-sky-500 p-5 m-2 rounded" onclick="redirecToSite('ontv')">
-           <h3 class="text-4xl font-thin">OnTV</h3>
-       </div>
-       <div class="bg-gradient-to-r from-blue-950 to-indigo-900 hover:from-indigo-950 hover:to-blue-900 text-sky-500 p-5 m-2 rounded" onclick="redirecToSite('streetburguers')">
-           <h3 class="text-4xl font-thin">Street's Burgers</h3>
+        <div class="bg-gradient-to-r from-blue-950 to-indigo-900 hover:from-indigo-950 hover:to-blue-900 text-sky-300 p-5 m-2 rounded" onclick="redirecToSite('flordeloto')">
+            <div class="block">
+                <h3 class="text-4xl font-thin p-1 mb-3">Flor de Loto</h3>
+                <span class="bg-indigo-900 rounded-full px-2 py-1 text-blue-400">Bootstrap 3.0</span>
+                <span class="bg-indigo-900 rounded-full px-2 py-1 text-blue-400">Custom css</span>
+                <span class="bg-indigo-900 rounded-full px-2 py-1 text-blue-400">FontAwesome</span>
+                <span class="bg-indigo-900 rounded-full px-2 py-1 text-blue-400">Parallax</span>
+            </div>
+        </div>
+       <div class="bg-gradient-to-r from-blue-950 to-indigo-900 hover:from-indigo-950 hover:to-blue-900 text-sky-300 p-5 m-2 rounded" onclick="redirecToSite('ontv')">
+            <div class="block">
+                <h3 class="text-4xl font-thin mb-3">OnTV</h3>
+                <span class="bg-indigo-900 rounded-full px-2 py-1 text-blue-400">Custom css</span>
+            </div>   
+        </div>
+       <div class="bg-gradient-to-r from-blue-950 to-indigo-900 hover:from-indigo-950 hover:to-blue-900 text-sky-300 p-5 m-2 rounded" onclick="redirecToSite('streetburguers')">
+            <div class="block">
+                <h3 class="text-4xl font-thin mb-3">Street's Burgers</h3>
+                <span class="bg-indigo-900 rounded-full px-2 py-1 text-blue-400">Parallax</span>
+                <span class="bg-indigo-900 rounded-full px-2 py-1 text-blue-400">CSS Experiment</span>
+            </div>   
         </div>
 </section>
-<br>
+<section id="mid-banner" class="m-5 text-yellow-500">
+    <span class="font-thin text-3xl italic">
+        Some of my hands-on fullstacking
+    </span>
+</section>
 <section class="flex-col border-2 border-yellow-500 border-dashed mx-5 p-5 rounded demos">
         <div class="bg-gradient-to-r from-yellow-500 to-orange-100 p-5 rounded grow m-2">
             <h2 class="text-5xl">Code Repos</h2>
         </div>
-        <div class="bg-gradient-to-r from-blue-950 to-indigo-900 hover:from-indigo-950 hover:to-blue-900 text-sky-500 p-5 m-2 rounded" onclick="redirecToSite('demongapi')">
-            <h3 class="text-4xl font-thin">API with Angular</h3>
+        <div class="bg-gradient-to-r from-blue-950 to-indigo-900 hover:from-indigo-950 hover:to-blue-900 text-sky-300 p-5 m-2 rounded" onclick="redirecToSite('demongapi')">
+            <h3 class="text-4xl font-thin">From REST to Chart: API with Angular</h3>
         </div>
-       <div class="bg-gradient-to-r from-blue-950 to-indigo-900 hover:from-indigo-950 hover:to-blue-900 text-sky-500 p-5 m-2 rounded" onclick="redirecToSite('vuedemos')">
-           <h3 class="text-4xl font-thin">Misc. Vue Demos</h3>
+       <div class="bg-gradient-to-r from-blue-950 to-indigo-900 hover:from-indigo-950 hover:to-blue-900 text-sky-300 p-5 m-2 rounded" onclick="redirecToSite('vuedemos')">
+           <h3 class="text-4xl font-thin">Misc. Vue Demos and exercises</h3>
        </div>
-       <div class="bg-gradient-to-r from-blue-950 to-indigo-900 hover:from-indigo-950 hover:to-blue-900 text-sky-500 p-5 m-2 rounded" onclick="redirecToSite('meseroapp')">
-           <h3 class="text-4xl font-thin">Angular App + Firebase</h3>
+       <div class="bg-gradient-to-r from-blue-950 to-indigo-900 hover:from-indigo-950 hover:to-blue-900 text-sky-300 p-5 m-2 rounded" onclick="redirecToSite('meseroapp')">
+           <h3 class="text-4xl font-thin">Mesero App: Angular + Firebase</h3>
        </div>
        
 </section>
-<footer class="text-sky-500 m-5">
+<footer class="text-sky-300 m-5">
     <blockquote>
-        Feel free to contact me at my <a href="mailto:madelynruiz06@gmail.com" class="hover:underline font-bold">email address</a>
+        Feel free to contact me at my <a href="mailto:madelynruiz06@gmail.com" class="hover:underline font-bold"> << email address >> </a>
     </blockquote>
 </footer>
 
